@@ -1,96 +1,37 @@
-<div class="gtco-section">
+<div class="gtco-section" id="destination">
     <div class="gtco-container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-                <h2>Most Popular Destination</h2>
-                <p>Ini Beberapa Tempat Yang Sering Di Kunjungi</p>
+                <h2>Destination</h2>
+                <p>Ini Tempat yang Kita Sediakan</p>
             </div>
         </div>
         <div class="row">
+            @foreach ($destinasi as $ds)
+    
 
             <div class="col-lg-4 col-md-4 col-sm-6">
-                <a href="{{asset('asset')}}/images/img_1.jpg" class="fh5co-card-item image-popup">
+                <a href="{{asset('foto_tempat')}}/{{$ds->foto}}" class="fh5co-card-item image-popup">
                     <figure>
                         <div class="overlay"><i class="ti-plus"></i></div>
-                        <img src="{{asset('asset')}}/images/img_1.jpg" alt="Image" class="img-responsive">
+                        <img src="{{url('foto_tempat/mini/'.$ds->fotomin)}}" alt="Image" class="img-responsive">
                     </figure>
                     <div class="fh5co-text">
-                        <h2>New York, USA</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-                        <p><span class="btn btn-primary">Schedule a Trip</span></p>
+                        <h2>{{$ds->nama}}</h2>
+                        <p>{{ Str::limit($ds->ket, 50, '...') }}</p>
+                        <p><span class="btn btn-primary">Detail</span></p>
+                       
+@if (Auth::user())
+<p><span class="btn btn-primary" onclick="window.open('https://api.whatsapp.com/send/?phone=%2B6285159922605&text=Saya+Akan+BOOKING+Trip+Ke+{{$ds->nama}}&type=phone_number&app_absent=0', '_blank')">booking</span></p>    
+@else
+<p><span class="btn btn-primary" onclick="window.location.href='/login';">booking</span></p>   
+@endif                    
+                      
                     </div>
                 </a>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <a href="images/img_2.jpg" class="fh5co-card-item image-popup">
-                    <figure>
-                        <div class="overlay"><i class="ti-plus"></i></div>
-                        <img src="images/img_2.jpg" alt="Image" class="img-responsive">
-                    </figure>
-                    <div class="fh5co-text">
-                        <h2>Seoul, South Korea</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-                        <p><span class="btn btn-primary">Schedule a Trip</span></p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <a href="images/img_3.jpg" class="fh5co-card-item image-popup">
-                    <figure>
-                        <div class="overlay"><i class="ti-plus"></i></div>
-                        <img src="images/img_3.jpg" alt="Image" class="img-responsive">
-                    </figure>
-                    <div class="fh5co-text">
-                        <h2>Paris, France</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-                        <p><span class="btn btn-primary">Schedule a Trip</span></p>
-                    </div>
-                </a>
-            </div>
-
-
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <a href="images/img_4.jpg" class="fh5co-card-item image-popup">
-                    <figure>
-                        <div class="overlay"><i class="ti-plus"></i></div>
-                        <img src="images/img_4.jpg" alt="Image" class="img-responsive">
-                    </figure>
-                    <div class="fh5co-text">
-                        <h2>Sydney, Australia</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-                        <p><span class="btn btn-primary">Schedule a Trip</span></p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <a href="images/img_5.jpg" class="fh5co-card-item image-popup">
-                    <figure>
-                        <div class="overlay"><i class="ti-plus"></i></div>
-                        <img src="images/img_5.jpg" alt="Image" class="img-responsive">
-                    </figure>
-                    <div class="fh5co-text">
-                        <h2>Greece, Europe</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-                        <p><span class="btn btn-primary">Schedule a Trip</span></p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <a href="images/img_6.jpg" class="fh5co-card-item image-popup">
-                    <figure>
-                        <div class="overlay"><i class="ti-plus"></i></div>
-                        <img src="images/img_6.jpg" alt="Image" class="img-responsive">
-                    </figure>
-                    <div class="fh5co-text">
-                        <h2>Spain, Europe</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-                        <p><span class="btn btn-primary">Schedule a Trip</span></p>
-                    </div>
-                </a>
-            </div>
-
+            
+            @endforeach
         </div>
     </div>
 </div>

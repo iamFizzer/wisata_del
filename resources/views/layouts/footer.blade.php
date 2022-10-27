@@ -5,7 +5,7 @@
             <div class="col-md-4">
                 <div class="gtco-widget">
                     <h3>About Us</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos molestias quod sint ipsum possimus temporibus officia iste perspiciatis consectetur in fugiat repudiandae cum. Totam cupiditate nostrum ut neque ab?</p>
+                    <p>Tong Cicing Wae di Hum ,, Angguran mah hilingkeun meh teu kuuleun</p>
                 </div>
             </div>
 
@@ -13,24 +13,18 @@
                 <div class="gtco-widget">
                     <h3>Destination</h3>
                     <ul class="gtco-footer-links">
-                        <li><a href="#">Europe</a></li>
-                        <li><a href="#">Australia</a></li>
-                        <li><a href="#">Asia</a></li>
-                        <li><a href="#">Canada</a></li>
-                        <li><a href="#">Dubai</a></li>
+                        <li><a href="#">Jawa Barat</a></li>
+                        <li><a href="#">Jawa Timur</a></li>
+                        <li><a href="#">Bali</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="col-md-2 col-md-push-1">
                 <div class="gtco-widget">
-                    <h3>Hotels</h3>
+                    <h3>Staycation</h3>
                     <ul class="gtco-footer-links">
-                        <li><a href="#">Luxe Hotel</a></li>
-                        <li><a href="#">Italy 5 Star hotel</a></li>
-                        <li><a href="#">Dubai Hotel</a></li>
-                        <li><a href="#">Deluxe Hotel</a></li>
-                        <li><a href="#">BoraBora Hotel</a></li>
+                        <li><a href="#">Villa</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,9 +33,9 @@
                 <div class="gtco-widget">
                     <h3>Get In Touch</h3>
                     <ul class="gtco-quick-contact">
-                        <li><a href="#"><i class="icon-phone"></i> +1 234 567 890</a></li>
-                        <li><a href="#"><i class="icon-mail2"></i> info@GetTemplates.co</a></li>
-                        <li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
+                        <li><a href="#"><i class="icon-phone"></i> +62 851 - 5992 - 2605</a></li>
+                        <li><a href="#"><i class="icon-mail2"></i> Wantunentravel@gmail.com</a></li>
+                        <li><a href="https://wa.me/+6285159922605"><i class="icon-chat"></i> Live Chat</a></li>
                     </ul>
                 </div>
             </div>
